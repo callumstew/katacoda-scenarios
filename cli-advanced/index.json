@@ -1,17 +1,25 @@
 {
   "title": "Advanced command line",
-  "description": "Advanced command line course",
-  "difficulty": "beginner",
-  "time": "2 minutes",
+  "description": "Bash tips & tricks, automation, and scripting",
+  "difficulty": "intermediate",
+  "time": "20 minutes",
   "details": {
-    "steps": [{
-        "title": "Step 1 - Run Command",
-        "text": "step1.md"},
+    "steps": [
         {
-        "title": "Step 2",
-        "text": "step2.md"}],
+            "title": "01: Introduction to bash",
+            "text": "01-bash-intro.md"
+        },
+        {
+            "title": "02: Expansions",
+            "text": "02-expansions.md"
+        },
+        {
+            "title": "03: Loops",
+            "text": "03-loops.md"
+        }
+    ],
     "intro": {
-      "text": "intro.md",
+      "text": "01-intro.md",
       "credits": ""
     },
     "finish": {
