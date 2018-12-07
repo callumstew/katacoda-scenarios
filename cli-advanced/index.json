@@ -19,7 +19,7 @@
         }
     ],
     "intro": {
-      "text": "01-intro.md",
+      "text": "0-intro.md",
       "credits": ""
     },
     "finish": {
