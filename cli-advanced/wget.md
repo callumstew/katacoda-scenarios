@@ -7,8 +7,12 @@ Make a directory to download the files into:
 ```mkdir c_elegans```{{execute}}
 
 Change to that directory:
-```cd c_elegans```{{{execute}}
+
+```cd c_elegans```{{execute}}
+
 
 Download all files (*) in the chromosomes folder of C. elegans on UCSC:
+
 ```wget ftp://hgdownload.cse.ucsc.edu/goldenPath/ce11/chromosomes/*```{{execute}}
+
 
