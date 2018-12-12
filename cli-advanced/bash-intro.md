@@ -20,6 +20,7 @@ or optionally surrounding it in curly braces - {} - which is useful when followi
 In some cases text manipulation may be more easily achieved through bash directly, rather than sed or awk. Bash includes a number of inbuilt variable manipulations, including:
 
 - Changing case
+
     `echo ${VAR,}`{{execute}}
 
     `echo ${VAR,,}`{{execute}}
@@ -29,6 +30,7 @@ In some cases text manipulation may be more easily achieved through bash directl
     `echo ${VAR^^}`{{execute}}
 
 - Sub-string removal - Use # to match a pattern from the beginning, and % to match a pattern from the end.
+
     `echo ${VAR#Hel}`{{execute}}
 
     `echo ${VAR%World}`{{execute}}
@@ -36,6 +38,7 @@ In some cases text manipulation may be more easily achieved through bash directl
     `echo ${VAR#World}`{{execute}}
 
 - Substitution - Use / to replace the first instance or // to replace all instances of a pattern. Particularly useful when renaming things
+
     `echo ${VAR/o/e}`{{execute}}
 
     `echo ${VAR//o/e}`{{execute}}
