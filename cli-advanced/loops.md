@@ -7,4 +7,15 @@ There are three types of loops:
 - *Until* loops run commands until a condition is met
 
 ## For loops
+A for loop takes the following form:
 
+```
+files="chrI.fa.gz chrII.fa.gz
+for value in files
+do
+    echo $value
+    zcat $value | head
+done
+```
+
+As you type the command, you can press enter and bash will keep the same prompt until the loop is closed, or you can use ';' to split commands instead of new lines to keep everything on a single line.
