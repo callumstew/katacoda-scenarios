@@ -7,15 +7,15 @@
     "steps": [
         {
             "title": "01: Introduction to bash",
-            "text": "01-bash-intro.md"
+            "text": "bash-intro.md"
         },
         {
-            "title": "02: Expansions",
-            "text": "02-expansions.md"
+            "title": "02: Downloading data",
+            "text": "wget.md"
         },
         {
             "title": "03: Loops",
-            "text": "03-loops.md"
+            "text": "loops.md"
         }
     ],
     "intro": {
@@ -27,8 +27,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu"
