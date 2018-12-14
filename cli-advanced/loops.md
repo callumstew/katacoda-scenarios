@@ -21,8 +21,7 @@ As you type the command, you can press enter and bash will keep the same prompt 
 
 An example that echos the file name and first few lines of the given files:
 ```
-files="Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz Arabidopsis_thaliana.TAIR10.dna.chromosome.2.fa.gz"
-for value in $files
+for value in *.fa.gz
 do
     echo $value
     zcat $value | head
@@ -30,8 +29,6 @@ done
 ```{{execute}}
 
 ```zcat``` is just the same as ```cat```, but works on compressed (.gz) files.
-
-Having to predefine the file names we want to look at in a variable probably takes even more time than just running the command without a loop. In the next section we will see how to use brace expansion and command substitution to speed things up, but first we will look at a ```while``` loop, which is capable of using ```read``` to iterate through a piped input.
 
 ## While loops
 
@@ -44,7 +41,7 @@ do
 done
 ```
 
-To view the first few lines of each file, similarly to above, we could use ```ls``` to list our files, and then pipe it to the while loop.
+To view the first few lines of each file, similarly to above, we could use ```ls``` to list our files, and then pipe it to the while loop, using ```read``` to read each line.
 
 ```
 ls *.fa.gz | while read value;
