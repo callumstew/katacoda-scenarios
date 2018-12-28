@@ -16,4 +16,6 @@ To recompress all the fasta files using two processes:
 Unfortunately the katacoda learning environment only has one core - but your actual computer will almost certainly have multiple cores.
 
 
-```parallel``` is a drop-in replacement for 
+```parallel``` is a drop-in replacement for ```xargs```, which will run jobs in parallel automatically, and has a number of extra features.
+For example, it can run jobs on external computers - particularly useful when using high performance clusters, and running multiple commands or nested loops is more easily done than in xargs.
+It is a program that is worth bearing in mind if you find yourself using time-consuming single-process programs. 
