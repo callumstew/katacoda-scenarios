@@ -14,8 +14,16 @@
             "text": "wget.md"
         },
         {
-            "title": "03: Loops",
+            "title": "03: Expansions",
+            "text": "expansions.md"
+        },
+        {
+            "title": "04: Loops",
             "text": "loops.md"
+        },
+        {
+            "title": "05: Replacing loops with xargs and parallel",
+            "text": "xargs-parallel.md"
         }
     ],
     "intro": {
