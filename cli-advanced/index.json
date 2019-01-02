@@ -24,6 +24,18 @@
         {
             "title": "05: Replacing loops with xargs and parallel",
             "text": "xargs-parallel.md"
+        },
+        {
+            "title": "06: Process control",
+            "text": "process-control.md"
+        },
+        {
+            "title": "07: Running programs with nohup",
+            "text": "nohup.md"
+        },
+        {
+            "title": "08: tmux",
+            "text": "tmux.md"
         }
     ],
     "intro": {
