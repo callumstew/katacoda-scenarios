@@ -21,7 +21,6 @@ To start a new tmux session, simply run tmux:
 
 You should be able to tell you are inside a tmux session by the status bar at the bottom of the terminal. Anything run here won't be interrupted if the terminal is closed or network connection is lost. If you want to get out and have only a single pane open, you can type exit.
 
-
 ## Controlling tmux
 
 ### Prefix
