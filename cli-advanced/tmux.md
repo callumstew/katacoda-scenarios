@@ -21,17 +21,18 @@ To start a new tmux session, simply run tmux:
 
 You should be able to tell you are inside a tmux session by the status bar at the bottom of the terminal. Anything run here won't be interrupted if the terminal is closed or network connection is lost. If you want to get out and have only a single pane open, you can type exit.
 
+
 ## Controlling tmux
 
 ### Prefix
-Naturally, keys entered go to the command prompt. To control tmux, first enter the 'Prefix' key combination ```Ctrl-b```. The key entered next will be sent to tmux instead. Pressing ```:``` will allow you to enter a longer command.
+Naturally, keys entered go to the command prompt. To control tmux, first enter the 'Prefix' key combination `Ctrl-b`. The key entered next will be sent to tmux instead. Pressing `:` will allow you to enter a longer command.
 
 ### Detaching and attaching
 
 For example, to detach from the tmux session, enter:
 
-```Ctrl-b```
-```d```
+`Ctrl-b`
+`d`
 
 Once detached, the tmux session will continue to run along with any commands you ran inside. To view running sessions, run:
 
@@ -43,7 +44,7 @@ To jump back in to a particular session type:
 
 ```tmux a -t 0```{{execute}} where 0 is the name of the session.
 
-```tmux a``` will attach to the last created session. ('tmux a' is short for 'tmux attach').
+`tmux a` will attach to the last created session. ('tmux a' is short for 'tmux attach').
 
 ### Naming a new session
 If you are inside a tmux session, detach from it again using ```Ctrl-b d```.
