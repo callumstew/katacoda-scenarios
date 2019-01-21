@@ -13,7 +13,7 @@ The -A flag will list all processes running on the computer.
 
 There are a variety of columns that can be specified in the output format. To see usage of memory and cpu, we can use %mem and %cpu with the -o argument. A full list of possible columns can be seen in ps's man page.
 
-```ps -A -o "pid comm %cpu %mem```{{execute}}
+```ps -A -o "pid comm %cpu %mem"```{{execute}}
 
 
 # Controlling and stopping processes
@@ -57,7 +57,7 @@ and then run ```kill <pid>```
 
 We could combine a few commands we have learnt to do it for us:
 
-```kill $(ps -A -o "pid comm" | grep sleep | cut -d ' ' -f1)```{{execute}}
+```kill $(ps -A -o "pid comm" | grep sleep | cut -d ' ' -f2)```{{execute}}
 
 This will evaluate the commands in braces first, and then run kill on the output. First the pid and command name of each process is listed in two columns, grep selects only those lines that match 'sleep', and finally cut is used to extract the second (pid) column.
 
