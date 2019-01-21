@@ -31,7 +31,7 @@ The above command will list the folders /bin, /usr/bin, and /local/usr/bin. The 
 
 ## Command substitution
 
-Sometimes we want to use the output of a command in the command we are writing, but piping and redirection is impossible or too unwiedly. Bash evaluates commands written within ``` `` ``` or ```$()``` before the rest of the command.
+Sometimes we want to use the output of a command in the command we are writing, but piping and redirection is impossible or too unwiedly. Bash evaluates commands written within ``` ` ` ``` or ```$()``` before the rest of the command.
 
 ```echo "The date is: $(date)"```{{execute}}
 
