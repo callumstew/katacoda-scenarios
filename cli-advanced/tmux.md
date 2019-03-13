@@ -1,10 +1,10 @@
-# Terminal sessions with tmux
+# Terminal sessions with tmux
 
 tmux is a terminal multiplexer - it creates a command-line session that you can enter in and out of quickly, and allows you to create 'windows' (similar to browser tabs) and 'panes' (splitting the screen into multiple prompts).
 
 Again, this is particularly useful for remote work. Instead of having a program run detached and in the background, it can be run within tmux. It is then easy to jump in and out of tmux to continue working.
 
-## Installation
+## Installation
 
 It is typically not installed by default. Unixes normally have a package manager. One of the most common, used by Debian and Ubuntu, is apt. To install tmux with apt run the following command and press Enter when prompted for confirmation:
 
@@ -13,7 +13,7 @@ It is typically not installed by default. Unixes normally have a package manager
 sudo is a tool that allows you to run a command as another user. By default, it will be the administrator (root) user, which is usually necessary to install programs through a package manager.
 
 
-## Starting out
+## Starting out
 
 To start a new tmux session, simply run tmux:
 
@@ -21,13 +21,12 @@ To start a new tmux session, simply run tmux:
 
 You should be able to tell you are inside a tmux session by the status bar at the bottom of the terminal. Anything run here won't be interrupted if the terminal is closed or network connection is lost. If you want to get out and have only a single pane open, you can type exit.
 
+## Controlling tmux
 
-## Controlling tmux
-
-### Prefix
+### Prefix
 Naturally, keys entered go to the command prompt. To control tmux, first enter the 'Prefix' key combination `Ctrl-b`. The key entered next will be sent to tmux instead. Pressing `:` will allow you to enter a longer command.
 
-### Detaching and attaching
+### Detaching and attaching
 
 For example, to detach from the tmux session, enter:
 
@@ -46,7 +45,7 @@ To jump back in to a particular session type:
 
 `tmux a` will attach to the last created session. ('tmux a' is short for 'tmux attach').
 
-### Naming a new session
+### Naming a new session
 If you are inside a tmux session, detach from it again using ```Ctrl-b d```.
 Numbered sessions are fine, but if we have several running at once it is nicer to have names.
 
@@ -61,7 +60,7 @@ If you were outside of it, you could reattach to that specific session using:
 ```tmux a -t [name]```{{execute}}
 
 
-### Making windows
+### Making windows
 
 Windows in tmux are like tabs. After entering the prefix, the key to open a new one is ```c```:
 
@@ -73,7 +72,7 @@ To switch between windows, enter the prefix and then the number of the window.
 
 ```Ctrl-b 0```
 
-### Making panes
+### Making panes
 
 Windows can be split into panes.
 
@@ -89,6 +88,6 @@ To switch between panes, use an arrow key in the direction of the pane you want 
 
 ```Ctrl-b o```
 
-### Cursor control
+### Cursor control
 
 Mouse support is available if you would prefer to switch between windows/panes and resize panes with a cursor, but only if the terminal you are using also supports it. Most do, but because this is in a web browser we can't try it out here.
