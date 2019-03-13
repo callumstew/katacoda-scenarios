@@ -24,6 +24,7 @@ You should be able to tell you are inside a tmux session by the status bar at th
 ## Controlling tmux
 
 ### Prefix
+
 Naturally, keys entered go to the command prompt. To control tmux, first enter the 'Prefix' key combination `Ctrl-b`. The key entered next will be sent to tmux instead. Pressing `:` will allow you to enter a longer command.
 
 ### Detaching and attaching
@@ -58,7 +59,6 @@ To make a new named tmux session, run the following replace [name] with whatever
 If you were outside of it, you could reattach to that specific session using:
 
 ```tmux a -t [name]```{{execute}}
-
 
 ### Making windows
 
