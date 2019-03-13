@@ -1,5 +1,5 @@
 # Process control
-It is not always clear what processes are running. There are a few tools, ranging in 
+It is not always clear what processes are running. There are a few tools to display processes and resource usage.
 
 # List processes
 The ```ps``` command prints out a list of running processes, by default only those that are run by the current user and controlled by a terminal.
