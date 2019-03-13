@@ -8,7 +8,20 @@ The ```ps``` command prints out a list of running processes, by default only tho
 
 The -A flag will list all processes running on the computer.
 
+
 ```ps -A```{{execute}}
+
+
+
+
+
+
+
+
+
+
+
+
 
 There are a variety of columns that can be specified in the output format. To see usage of memory and cpu, we can use %mem and %cpu with the -o argument. A full list of possible columns can be seen in ps's man page.
 
